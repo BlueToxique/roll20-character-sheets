@@ -435,7 +435,7 @@
                             <button class="btn-min" type="roll" value="@{privaterolls}&{template:aria1} {{name=Voler}} {{character_name=[@{nameinrolls}](http://journal.roll20.net/character/@{character_id})}} {{body=Voler : @{voler}%}} {{roll=[[1d100cf>96cs<5]]}}"></button>
                         </div>
                         <span class="column2">Voler</span>
-                        <span class="column3">INT/CHA</span>
+                        <span class="column3">DEX/INT</span>
                         <input class="column4" name="attr_voler" type="text">
                         <span class="column5">%</span>
                     </div>
@@ -748,7 +748,7 @@ on(`clicked:calcul-comp1`, () => {
             serrures: Math.floor((DEX + END) / 2) * 5,
             soigner: Math.floor((INT + CHA) / 2) * 5,
             survie: Math.floor((END + INT) / 2) * 5,
-            voler: Math.floor((INT + CHA) / 2) * 5,
+            voler: Math.floor((DEX + INT) / 2) * 5,
             optiontab: "0",
             co_comp1: "0",
             co_comp2: "0",
@@ -786,7 +786,7 @@ on(`clicked:calcul-comp2`, () => {
             serrures: (DEX + END) * 2,
             soigner: (INT + CHA) * 2,
             survie: (END + INT) * 2,
-            voler: (INT + CHA) * 2,
+            voler: (DEX + INT) * 2,
             optiontab: "0",
             co_comp1: "0",
             co_comp2: "0",
